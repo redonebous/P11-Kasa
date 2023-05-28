@@ -1,0 +1,24 @@
+.collapses {
+    display: flex;
+}
+
+.large {
+    margin: 5% 5%;
+}
+
+.hauteur {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 750px) {
+    .collapses {
+        flex-direction: column;
+    }
+
+    .hauteur {
+        height: 140px;
+    }
+}

@@ -1,0 +1,30 @@
+.footer {
+    height: 200px;
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    filter: invert(1) saturate(0%);
+    height: 60px;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 750px) {
+    .logo {
+        height: 40px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,130 @@
+.container {
+    width: 80%;
+    margin: 3% 10%;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.head i {
+    cursor: pointer;
+}
+
+.text {
+    padding: 15px;
+    margin: 0px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    z-index: -1;
+}
+
+.show {
+    transform: translateY(0%);
+    position: relative;
+    visibility: visible;
+    opacity: 100%;
+}
+
+
+
+.hide {
+    transform: translateY(-100%);
+    opacity: 0%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.up {
+    transform: rotate(180deg);
+}
+
+.down {
+    transform: rotate(0deg);
+}
+
+.activeDrop {
+    animation: 0.5s linear collapse forwards;
+}
+
+.activeIcon {
+    animation: 0.5s linear icon forwards;
+}
+
+.disableDrop {
+    animation: 0.5s linear collapse forwards reverse;
+}
+
+.disableIcon {
+    animation: 0.5s linear icon forwards reverse;
+}
+
+@keyframes icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes collapse {
+    0% {
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0%;
+        position: absolute;
+    }
+
+    50% {
+        transform: translateY(-50%);
+        visibility: hidden;
+        opacity: 0%;
+        position: absolute;
+    }
+
+    75% {
+        transform: translateY(-25%);
+        visibility: visible;
+        opacity: 70%;
+        position: relative;
+    }
+
+    100% {
+        transform: translateY(0%);
+        visibility: visible;
+        opacity: 100%;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .container {
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .head {
+        font-size: 13px;
+    }
+}

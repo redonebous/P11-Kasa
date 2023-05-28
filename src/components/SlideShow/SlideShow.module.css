@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 5%;
+    height: 415px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.arrowLeft {
+    color: white;
+    font-size: 70px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.arrowRight {
+    color: white;
+    font-size: 70px;
+    cursor: pointer;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+    .container {
+        height: 255px;
+    }
+
+    .arrowLeft {
+        font-size: 30px;
+    }
+
+    .arrowRight {
+        font-size: 30px;
+    }
+}
