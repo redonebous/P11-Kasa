@@ -48,3 +48,19 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 750px) and (max-height: 800px) {
+
+    .error {
+        transform: translateY(55%);
+    }
+
+}
+
+@media (max-width: 750px) and (max-height: 700px) {
+
+    .error {
+        transform: translateY(45%);
+    }
+
+}

@@ -8,6 +8,7 @@ export default function Card(props) {
     return (
         <>
             <Link to={path} className={styles.card}>
+                <img className={styles.img} src={props.img} alt={props.title} />
                 <p className={styles.text}>{props.title}</p>
             </Link>
         </>

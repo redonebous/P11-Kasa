@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Info.module.css'
 import Tag from '../Tag/Tag'
-import Collapse from '../Collapse/Collapse'
 
 export default function Info({ data }) {
 

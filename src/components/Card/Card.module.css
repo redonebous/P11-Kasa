@@ -2,17 +2,33 @@
     height: 300px;
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(180deg, #FF6060, rgba(0, 0, 0, 0.5));
     justify-self: center;
     display: flex;
     align-items: end;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
 .text {
     color: white;
-    margin: 20px;
+    padding: 20px;
+    margin: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
 }

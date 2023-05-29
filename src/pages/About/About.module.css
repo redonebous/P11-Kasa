@@ -1,9 +1,10 @@
+.main {
+    min-height: 65vh;
+}
+
 @media (max-width: 750px) {
     .hauteur {
         height: 223px;
     }
 
-    .main {
-        min-height: 65vh;
-    }
 }

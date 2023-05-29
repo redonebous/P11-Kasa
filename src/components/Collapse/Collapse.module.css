@@ -2,6 +2,7 @@
     width: 80%;
     margin: 3% 10%;
     position: relative;
+    overflow: hidden;
 }
 
 .head {
@@ -19,99 +20,43 @@
 
 .head i {
     cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s linear;
+}
+
+.content {
+    max-height: 0px;
+    min-width: 100%;
+    transition: max-height 0.3s linear;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+
 }
 
 .text {
-    padding: 15px;
-    margin: 0px;
-    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+    height: 100%;
+    width: 94%;
+    z-index: -1;
+    background-color: transparent;
     color: #FF6060;
-    border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    z-index: -1;
-}
-
-.show {
-    transform: translateY(0%);
-    position: relative;
-    visibility: visible;
-    opacity: 100%;
-}
-
-
-
-.hide {
-    transform: translateY(-100%);
-    opacity: 0%;
     visibility: hidden;
-    position: absolute;
+    transition: visibility 0.1s linear;
 }
 
-.up {
-    transform: rotate(180deg);
+.text p {
+    margin: 0px;
+    width: 100%;
+
 }
 
-.down {
-    transform: rotate(0deg);
-}
 
-.activeDrop {
-    animation: 0.5s linear collapse forwards;
-}
-
-.activeIcon {
-    animation: 0.5s linear icon forwards;
-}
-
-.disableDrop {
-    animation: 0.5s linear collapse forwards reverse;
-}
-
-.disableIcon {
-    animation: 0.5s linear icon forwards reverse;
-}
-
-@keyframes icon {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes collapse {
-    0% {
-        transform: translateY(-100%);
-        visibility: hidden;
-        opacity: 0%;
-        position: absolute;
-    }
-
-    50% {
-        transform: translateY(-50%);
-        visibility: hidden;
-        opacity: 0%;
-        position: absolute;
-    }
-
-    75% {
-        transform: translateY(-25%);
-        visibility: visible;
-        opacity: 70%;
-        position: relative;
-    }
-
-    100% {
-        transform: translateY(0%);
-        visibility: visible;
-        opacity: 100%;
-        position: relative;
-    }
-}
 
 
 @media (max-width: 750px) {
