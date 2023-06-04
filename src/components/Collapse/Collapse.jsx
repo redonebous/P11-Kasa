@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './Collapse.module.css'
 
 export default function Collapse(props) {

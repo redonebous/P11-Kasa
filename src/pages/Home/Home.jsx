@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import data from '../../data/data.json'
 import Banner from '../../components/Banner/Banner'
 import Galery from '../../components/Galery/Galery'

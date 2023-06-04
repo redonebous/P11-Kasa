@@ -20,6 +20,7 @@ export default function SlideShow({ data, title }) {
                 <img className={styles.img} src={current} alt={title} />
                 <i className={styles.arrowRight + " fa-solid fa-chevron-right"} onClick={() => setIndex(index + 1)}></i>
                 <i className={styles.arrowLeft + " fa-solid fa-chevron-left"} onClick={() => setIndex(index - 1)}></i>
+                <span className={styles.count}>{index + 1} / {data.length}</span>
             </div>
         )
     } else {

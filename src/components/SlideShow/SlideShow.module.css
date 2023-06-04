@@ -17,6 +17,17 @@
     position: absolute;
 }
 
+.count {
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+}
+
 .arrowLeft {
     color: white;
     font-size: 70px;
@@ -44,5 +55,9 @@
 
     .arrowRight {
         font-size: 30px;
+    }
+
+    .count {
+        display: none;
     }
 }
